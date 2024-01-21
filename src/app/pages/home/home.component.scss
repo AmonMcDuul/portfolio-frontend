@@ -7,7 +7,43 @@
   margin: 40px;
   background-color: #ececec;
   animation: bordercolour 15s infinite;
-  position: relative; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+
+  .name {
+    font-size: 40px;
+    letter-spacing: 10px;
+    animation: textAnimation 3s ease-in forwards;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    letter-spacing: 8px;
+    font-weight: bold;
+
+    // animation: textAnimation 1s ease-in forwards;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    li {
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+        &.active {
+            color: #640000;
+            text-decoration: underline;
+        }
+    }
+  }
 }
 
 #tsparticles {
@@ -22,10 +58,42 @@
 }
 
 #content {
-  position: absolute;
+  // position: absolute;
   z-index: 1;
+  margin-left: 40px;
+  font-size: 18px;
+  letter-spacing: 4px;
 }
 
-  @keyframes bordercolour {
-    50% {border-color: #640000;}
+.configs {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  margin-left: 5px;
+}
+
+.home-text {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  margin-right: 60px;
+  text-align: right;
+  max-width: 600px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+}
+
+@keyframes bordercolour {
+  50% {
+    border-color: #640000;
   }
+}
+
+@keyframes textAnimation {
+  0% {
+    letter-spacing: 11px;
+  }
+  100% {
+    letter-spacing: 10px;
+  }
+}

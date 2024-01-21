@@ -1,22 +1,24 @@
 <div class="content-container">
     <div id="tsparticles"></div>
     <div id="content">
-        <h1>Joran Schols</h1>
-        <p>Fullstack Developer</p>
+        <h1 class="name">Joran Schols</h1>
+        <div class="subtitle">Developer</div>
         <ul>
-            <li>
+            <li [class.active]="selectedItem === 'home'" (click)="selectItem('home')">
                 Home
             </li>
-            <li>
+            <li [class.active]="selectedItem === 'projects'" (click)="selectItem('projects')">
                 Projects
             </li>
-            <li>
-                Info
-            </li>
-            <li>
+            <li [class.active]="selectedItem === 'contact'" (click)="selectItem('contact')">
                 Contact
             </li>
         </ul>
-        <small>&copy; 2024 Joran Schols</small>
     </div>
+    <div class="home-text" *ngIf="selectedItem === 'home'">
+        <p>Born in 1987 in the Netherlands, I've always had a passion for computing, software, and hardware. Programming
+            is not just my profession but also my hobby. As a full-stack developer, I work with languages such as C#,
+            TypeScript, Python, and Rust.</p>
+    </div>
+    <div class="configs"><button (click)="changeConfig()">change</button></div>
 </div>

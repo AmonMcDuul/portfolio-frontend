@@ -1,18 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ParticleService } from '../../services/particle.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 
-export class HomeComponent {
-  constructor(private particleService: ParticleService) {}
+export class HomeComponent implements OnInit {
+  selectedItem: string | null = null;
 
+  constructor(private particleService: ParticleService) {}
+  
   ngOnInit(): void {
-     this.particleService.loadParticles().then(() => console.log('Particles initialized'));
+    this.selectedItem = "home";
+    this.particleService.loadParticles();
   }
- }
+  selectItem(item: string): void {
+      this.selectedItem = item;
+  }
+
+  changeConfig(){
+    this.particleService.loadParticles();
+  }
+}
