@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from '../../components/contact/contact.component';
 import { InfoComponent } from '../../components/info/info.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ContactComponent, InfoComponent, ProjectsComponent],
+  imports: [CommonModule, ContactComponent, InfoComponent, ProjectsComponent, CarouselModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

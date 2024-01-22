@@ -1,1 +1,10 @@
-<p>projects works!</p>
+<owl-carousel-o class="container" [options]="carouselOptions">
+    <ng-template carouselSlide *ngFor="let project of projects">
+        <div class="slide-item">
+            <img [src]="project.img" alt="Project Image">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+            <a href="{{ project.url }}">View on GitHub</a>
+        </div>
+    </ng-template>
+</owl-carousel-o>

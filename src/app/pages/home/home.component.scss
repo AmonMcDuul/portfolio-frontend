@@ -77,7 +77,6 @@
 
 .home-text {
   position: absolute;
-  // top: 60%;
   bottom: 40px;
   right: 0;
   margin-right: 60px;
@@ -88,6 +87,17 @@
   letter-spacing: 4px;
   animation: glitchHomeText 20s infinite;
 }
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  bottom: 50px;
+  max-width: 800px;
+  overflow:hidden;
+
+ }
 
 @keyframes textAnimation {
   0% {

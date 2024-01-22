@@ -18,11 +18,11 @@
     <div class="home-text" *ngIf="selectedItem === 'home'">
         <app-info></app-info>
     </div>
-    <div class="home-text" *ngIf="selectedItem === 'projects'">
-        <app-projects></app-projects>
-    </div>
     <div class="home-text" *ngIf="selectedItem === 'contact'">
         <app-contact></app-contact>
+    </div>
+    <div class="carousel-wrapper" *ngIf="selectedItem === 'projects'">
+        <app-projects></app-projects>
     </div>
     <div class="configs"><button (click)="changeConfig()">change</button></div>
 </div>
