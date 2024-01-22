@@ -24,5 +24,15 @@
     <div class="carousel-wrapper" *ngIf="selectedItem === 'projects'">
         <app-projects></app-projects>
     </div>
-    <div class="configs"><button (click)="changeConfig()">change</button></div>
+    <div class="configs">
+        <button (click)="changeConfig()">change</button>
+
+        <button *ngFor="let themeName of themeService.themeNames" (click)="themeService.set(themeName)"
+            [class.active]="themeService.activeTheme === themeName">
+            {{ themeName }}
+        </button>
+        <div class="info">active theme: {{ themeService.activeTheme }}</div>
+    </div>
+
+
 </div>

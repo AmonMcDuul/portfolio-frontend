@@ -1,0 +1,13 @@
+.light-theme {
+    --background-color: #ececec;
+    --content-background-color: linear-gradient(to right bottom, #ececec, #d8d5d5);;
+    --primary: #7dd3fc;
+    --color: #0f172a;
+  }
+  
+  .dark-theme {
+    --primary: #059669;
+    --content-background-color: linear-gradient(to right bottom, #3f3a3a, #500909);;
+    --background-color: #0f172a;
+    --color: #f9fafb;
+  }

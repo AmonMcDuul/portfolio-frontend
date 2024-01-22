@@ -5,6 +5,7 @@ import { ContactComponent } from '../../components/contact/contact.component';
 import { InfoComponent } from '../../components/info/info.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-home',
@@ -16,10 +17,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
 export class HomeComponent implements OnInit {
   selectedItem: string | null = null;
-
-  constructor(private particleService: ParticleService) {}
+  themes: any;
+  themeBool: boolean = true;
+  constructor(private particleService: ParticleService, protected themeService: ThemeService) {}
   
   ngOnInit(): void {
+    this.themeService.set('light');
     this.selectedItem = "home";
     this.particleService.loadParticles();
   }

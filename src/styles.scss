@@ -1,9 +1,12 @@
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import './assets/styles/themes.scss';
+
 
 /* You can add global styles to this file, and also import other style files */
 html{
-    background-color: #ececec;
+    // background-color: #ececec;
+    background-color: var(--background-color);
 }
 
 body {
