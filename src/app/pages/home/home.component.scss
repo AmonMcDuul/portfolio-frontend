@@ -1,16 +1,15 @@
 .content-container {
-  border: 1px solid #000000;
+  background-color: #ececec;
+  background-image: linear-gradient(to right bottom, #ececec, #d8d5d5);
+  border: 1px solid #640000;
   padding: 30px;
   overflow: auto;
   width: auto;
   height: 85vh;
   margin: 40px;
-  background-color: #ececec;
-  animation: bordercolour 15s infinite;
   position: relative;
   display: flex;
   flex-direction: column;
-  
 
   .name {
     font-size: 40px;
@@ -26,7 +25,7 @@
   }
 
   .subtitle:hover{
-    animation: glitchText 0.5s;
+    animation: glitchText 0.3s;
   }
 
   ul {
@@ -87,13 +86,7 @@
   font-size: 17px;
   line-height: 1.5;
   letter-spacing: 4px;
-  animation: glitchText 10s infinite;
-}
-
-@keyframes bordercolour {
-  50% {
-    border-color: #640000;
-  }
+  animation: glitchHomeText 20s infinite;
 }
 
 @keyframes textAnimation {
@@ -126,6 +119,33 @@
   }
   96%, 98% {
     transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes glitchHomeText {
+  2%, 64% {
+    transform: translate(10px, 0);
+  }
+  4%, 60% {
+    transform: translate(-8px, 0);
+  }
+  62% {
+    transform: translate(0, 0);
+  }
+  63% {
+    transform: translate(0, 8px);
+  }
+  65% {
+    transform: translate(0, -8px);
+  }
+  94% {
+    transform: translate(0, 0);
+  }
+  96%, 98% {
+    transform: translate(10px, 0);
   }
   100% {
     transform: translate(0, 0);

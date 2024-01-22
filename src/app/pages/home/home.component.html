@@ -16,9 +16,13 @@
         </ul>
     </div>
     <div class="home-text" *ngIf="selectedItem === 'home'">
-        <p>Born in 1987 in the Netherlands, I've always had a passion for computing, software, and hardware. Programming
-            is not just my profession but also my hobby. As a full-stack developer, I work with languages such as C#,
-            TypeScript, Python, and Rust.</p>
+        <app-info></app-info>
+    </div>
+    <div class="home-text" *ngIf="selectedItem === 'projects'">
+        <app-projects></app-projects>
+    </div>
+    <div class="home-text" *ngIf="selectedItem === 'contact'">
+        <app-contact></app-contact>
     </div>
     <div class="configs"><button (click)="changeConfig()">change</button></div>
 </div>

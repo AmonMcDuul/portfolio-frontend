@@ -1,0 +1,13 @@
+<div class="contact-form-container">
+    <h2>Contact Me</h2>
+
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" required>
+        <label for="name">Email</label>
+        <input type="text" id="email" name="email" [(ngModel)]="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>

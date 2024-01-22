@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ParticleService } from '../../services/particle.service';
 import { CommonModule } from '@angular/common';
+import { ContactComponent } from '../../components/contact/contact.component';
+import { InfoComponent } from '../../components/info/info.component';
+import { ProjectsComponent } from '../../components/projects/projects.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ContactComponent, InfoComponent, ProjectsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
