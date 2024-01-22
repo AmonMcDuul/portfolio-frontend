@@ -18,14 +18,17 @@
     animation: textAnimation 3s ease-in forwards;
     font-weight: bold;
   }
-
+  
   .subtitle {
     font-size: 24px;
     letter-spacing: 8px;
     font-weight: bold;
-
-    // animation: textAnimation 1s ease-in forwards;
   }
+
+  .subtitle:hover{
+    animation: glitchText 0.5s;
+  }
+
   ul {
     list-style: none;
     padding: 0;
@@ -33,10 +36,11 @@
     display: flex;
     flex-direction: column;
     li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         cursor: pointer;
         &:hover {
             text-decoration: underline;
+            animation: glitchText 0.1s 1;
         }
         &.active {
             color: #640000;
@@ -74,13 +78,16 @@
 
 .home-text {
   position: absolute;
-  top: 60%;
+  // top: 60%;
+  bottom: 40px;
   right: 0;
   margin-right: 60px;
   text-align: right;
   max-width: 600px;
+  font-size: 17px;
   line-height: 1.5;
   letter-spacing: 4px;
+  animation: glitchText 10s infinite;
 }
 
 @keyframes bordercolour {
@@ -95,5 +102,32 @@
   }
   100% {
     letter-spacing: 10px;
+  }
+}
+
+@keyframes glitchText {
+  2%, 64% {
+    transform: translate(2px, 0);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(0, 0);
+  }
+  63% {
+    transform: translate(0, 2px);
+  }
+  65% {
+    transform: translate(0, -2px);
+  }
+  94% {
+    transform: translate(0, 0);
+  }
+  96%, 98% {
+    transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
