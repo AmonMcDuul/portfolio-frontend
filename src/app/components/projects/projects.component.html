@@ -1,10 +1,20 @@
-<owl-carousel-o class="container" [options]="carouselOptions">
-    <ng-template carouselSlide *ngFor="let project of projects">
-        <div class="slide-item">
-            <img [src]="project.img" alt="Project Image">
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.description }}</p>
-            <a href="{{ project.url }}">View on GitHub</a>
-        </div>
-    </ng-template>
-</owl-carousel-o>
+<div *ngFor="let project of projects">
+    <div class="project-item">
+        <h3>{{ project.title }}</h3>
+        <small><b>{{ project.tags }}</b></small>
+        <p>{{ project.description }}</p>
+        <p>
+            <a *ngIf="project.url !== undefined" [href]="project.url" target="_blank">View:<fa-icon
+                    [icon]="faGithub"></fa-icon></a>
+        </p>
+        <p>
+            <a *ngIf="project.url2git !== undefined" [href]="project.url2git" target="_blank">View:<fa-icon
+                    [icon]="faGithub"></fa-icon></a>
+        </p>
+        <p>
+            <a *ngIf="project.url2 !== undefined" [href]="project.url2" target="_blank">View:<fa-icon
+                    [icon]="faGlobe"></fa-icon></a>
+        </p>
+        <hr>
+    </div>
+</div>

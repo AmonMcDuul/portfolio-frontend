@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from '../../components/contact/contact.component';
 import { InfoComponent } from '../../components/info/info.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ThemeService } from '../../services/theme.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faGear } from '@fortawesome/free-solid-svg-icons';
+import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ContactComponent, InfoComponent, ProjectsComponent, CarouselModule],
+  imports: [CommonModule, ContactComponent, InfoComponent, ProjectsComponent, FontAwesomeModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -19,6 +21,9 @@ export class HomeComponent implements OnInit {
   selectedItem: string | null = null;
   themes: any;
   themeBool: boolean = true;
+  faGear = faGear;
+  faCircleHalfStroke = faCircleHalfStroke;
+  
   constructor(private particleService: ParticleService, protected themeService: ThemeService) {}
   
   ngOnInit(): void {

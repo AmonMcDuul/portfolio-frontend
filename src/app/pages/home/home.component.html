@@ -15,24 +15,22 @@
             </li>
         </ul>
     </div>
-    <div class="home-text" *ngIf="selectedItem === 'home'">
+    <div class="text-container" *ngIf="selectedItem === 'home'">
         <app-info></app-info>
     </div>
-    <div class="home-text" *ngIf="selectedItem === 'contact'">
+    <div class="text-container" *ngIf="selectedItem === 'contact'">
         <app-contact></app-contact>
     </div>
-    <div class="carousel-wrapper" *ngIf="selectedItem === 'projects'">
+    <div class="projects-container" *ngIf="selectedItem === 'projects'">
         <app-projects></app-projects>
     </div>
     <div class="configs">
-        <button (click)="changeConfig()">change</button>
-
-        <button *ngFor="let themeName of themeService.themeNames" (click)="themeService.set(themeName)"
-            [class.active]="themeService.activeTheme === themeName">
-            {{ themeName }}
+        <button (click)="changeConfig()" class="icon-button">
+            <fa-icon [icon]="faGear" class="icon"></fa-icon>
         </button>
-        <div class="info">active theme: {{ themeService.activeTheme }}</div>
+
+        <button (click)="themeService.change()" class="icon-button">
+            <fa-icon [icon]="faCircleHalfStroke" class="icon"></fa-icon>
+        </button>
     </div>
-
-
 </div>

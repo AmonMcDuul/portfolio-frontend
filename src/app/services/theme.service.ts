@@ -28,6 +28,15 @@ export class ThemeService {
     document.documentElement.classList.add(theme[themeName]);
   }
 
+  change(){
+    if(this.activeTheme === 'light'){
+      this.set('dark')
+    }
+    else{
+      this.set('light')
+    }
+  }
+
   get themeNames(): string[] {
     return Object.keys(theme);
   }
