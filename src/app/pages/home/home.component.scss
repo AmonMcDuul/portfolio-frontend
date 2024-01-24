@@ -12,6 +12,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  
 
   .name {
     font-size: 40px;
@@ -66,7 +67,7 @@
 
 #content {
   // position: absolute;
-  z-index: 1;
+  z-index: 3;
   margin-left: 40px;
   font-size: 18px;
   letter-spacing: 4px;
@@ -205,5 +206,59 @@
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    height: fit-content;
+    .name {
+      font-size: 24px;
+    }
+    .subtitle {
+      font-size: 16px;
+    }
+    ul {
+      font-size: 16px;
+
+      display: flex;
+      flex-direction: row;
+
+      margin: 20px 0 20px 0;
+      li {
+        margin: 0 20px 10px 0;
+      }
+    }
+  }
+
+  #tsparticles {
+    margin: 0;
+    display: none;
+  }
+
+  #content {
+    margin-left: 20px;
+  }
+
+  .text-container,
+  .projects-container {
+    text-align: left;
+
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    max-width: auto;
+    box-shadow: 
+    0 0 0 0 transparent,
+    inset 0 0 0 0 transparent;
+  }
+
+  .configs {
+    margin-left: 0;
   }
 }
