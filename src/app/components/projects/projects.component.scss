@@ -6,7 +6,18 @@ a{
     &:hover {
       animation: glitchText 0.1s 1;
     }
+
+    h2{
+        font-size: 24px;
+        letter-spacing: 8px;
+        font-weight: bold;
+    }
   }
+
+.tag {
+    font-weight: bold;
+    font-size: 16px;
+}
 
   @keyframes glitchText {
     2%, 64% {

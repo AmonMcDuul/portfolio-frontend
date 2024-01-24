@@ -1,7 +1,7 @@
 <div *ngFor="let project of projects">
     <div class="project-item">
-        <h3>{{ project.title }}</h3>
-        <small><b>{{ project.tags }}</b></small>
+        <h2>{{ project.title }}</h2>
+        <small class="tag">{{ project.tags }}</small>
         <p>{{ project.description }}</p>
         <p>
             <a *ngIf="project.url !== undefined" [href]="project.url" target="_blank">View:<fa-icon
