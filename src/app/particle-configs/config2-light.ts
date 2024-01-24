@@ -1,8 +1,8 @@
-const config2 = {
+const config2Light = {
     fullScreen: { enable: false },
     particles: {
       number: {
-        value: 100
+        value: 75
       },
       color: {
         value: "#ffffff"
@@ -34,5 +34,5 @@ const config2 = {
     }
   };
   
-  export default config2;
+  export default config2Light;
   

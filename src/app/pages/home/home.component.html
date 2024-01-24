@@ -22,14 +22,14 @@
         <app-contact></app-contact>
     </div>
     <div class="projects-container" *ngIf="selectedItem === 'projects'">
-        <app-projects></app-projects>
+        <div class="projects-inner-container"> <app-projects></app-projects> </div>
     </div>
     <div class="configs">
         <button (click)="changeConfig()" class="icon-button">
             <fa-icon [icon]="faGear" class="icon"></fa-icon>
         </button>
 
-        <button (click)="themeService.change()" class="icon-button">
+        <button (click)="setThemeReloadParticles()" class="icon-button">
             <fa-icon [icon]="faCircleHalfStroke" class="icon"></fa-icon>
         </button>
     </div>

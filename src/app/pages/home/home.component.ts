@@ -38,4 +38,10 @@ export class HomeComponent implements OnInit {
   changeConfig(){
     this.particleService.loadParticles();
   }
+
+  setThemeReloadParticles(){
+    this.themeBool = !this.themeBool;
+    this.themeService.change();
+    this.particleService.reloadParticles(this.themeBool);
+  }
 }

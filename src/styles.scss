@@ -2,16 +2,13 @@
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 @import './assets/styles/themes.scss';
 
-
-/* You can add global styles to this file, and also import other style files */
 html{
-    // background-color: #ececec;
     background-color: var(--background-color);
 }
 
 body {
-font-family: 'Courier New', monospace;
-color: var(--text-color);
-margin: 0;
-padding: 0;
+    font-family: 'Courier New', monospace;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }

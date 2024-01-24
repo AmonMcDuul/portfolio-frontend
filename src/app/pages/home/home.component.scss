@@ -98,22 +98,25 @@
 }
 
 .projects-container {
-  position: relative; 
+  position: absolute; 
+  text-align: right;
+  bottom: 40px;
+  right: 0;
+  margin-right: 60px;
   text-align: right;
   max-width: 600px;
-  padding:50px;
-  left: 58%;
-  bottom: 40px;
   letter-spacing: 4px;
   line-height: 1.5;
-  overflow: auto; 
+  animation: glitchHomeText 20s infinite;
   z-index: 2;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+  padding:50px;
   box-shadow: 
   0 0 20px 20px var(--background-color),
   inset 0 0 20px 20px transparent;
-
+  overflow: auto; 
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  
   &::-webkit-scrollbar {
     width: 12px;
   }

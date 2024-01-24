@@ -1,4 +1,4 @@
-const config1 = {
+const config1Light = {
     fpsLimit: 120,
     interactivity: {
       events: {
@@ -66,5 +66,5 @@ const config1 = {
     detectRetina: true
   };
   
-  export default config1;
+  export default config1Light;
   
