@@ -21,14 +21,14 @@
       textarea {
         padding: 12px;
         margin-bottom: 16px;
-        border: 1px solid #640000;
-        background-color: #ececec;
+        border: 1px solid var(--contact-border);
+        background-color: var(--contact-background);
         font-size: 16px;
         letter-spacing: 4px;
         opacity: 0.5;
   
         &:focus {
-          animation: bordercolor 2s infinite;
+          animation: bordercolor 2s 2;
           opacity: 0.9;
           outline: none;
         }
@@ -36,8 +36,8 @@
   
       button {
         padding: 12px;
-        background-color: #ececec;
-        color: #000000;
+        background-color: var(--contact-background-button);
+        color: var(--text-color);
         cursor: pointer;
         font-size: 16px;
         letter-spacing: 8px;
@@ -54,6 +54,6 @@
   
   @keyframes bordercolor {
     50% {
-      border-color: #ececec;
+      border-color: var(--contact-border-alt);
     }
   }

@@ -3,7 +3,7 @@
 .content-container {
   background-color: var(--background-color);
   background-image: var(--content-background-color);
-  border: 1px solid #640000;
+  border: 1px solid var(--border-red);
   padding: 30px;
   overflow: auto;
   width: auto;
@@ -46,7 +46,7 @@
             animation: glitchText 0.1s 1;
         }
         &.active {
-            color: #640000;
+            color: var(--active-list-element);
             text-decoration: underline;
         }
     }
@@ -115,21 +115,6 @@
   &::-webkit-scrollbar-track {
     background-color: transparent;
   }
-
-  .project-item {
-    margin-bottom: 20px;
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: underline;
-      animation: glitchText 0.1s 1;
-    }
-
-    &.active {
-      color: #640000;
-      text-decoration: underline;
-    }
-  }
 }
 
 .icon-button {
@@ -137,7 +122,7 @@
   background-color: transparent;
   padding: 5px;
   margin: 10px 0px 10px 10px;
-  color: #000;
+  color: var(--icon-color);
   opacity: 0.3;
 }
 
