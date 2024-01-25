@@ -5,15 +5,25 @@ import config1Light from '../particle-configs/config1-light';
 import config2Light from '../particle-configs/config2-light';
 import config1Dark from '../particle-configs/config1-dark';
 import config2Dark from '../particle-configs/config2-dark';
-import config3 from '../particle-configs/config3';
 
 @Injectable({
  providedIn: 'root'
 })
 
 export class ParticleService {
-  private particleConfigs: any[] = [config2Light, config1Light];
+  private particleConfigs: any[] = [config1Light, config2Light];
   private currentConfigIndex = 0;
+
+  async setInitConfig() {
+    const storedThemeBool = localStorage.getItem('themeBool');
+    let themeBool = storedThemeBool ? JSON.parse(storedThemeBool) : false;
+    if(themeBool){
+      this.particleConfigs = [config1Light, config2Light];
+    }
+    else{
+      this.particleConfigs = [config2Dark, config1Dark];
+    }
+  }
 
   async initParticles(config: any): Promise<void> {
       await loadSlim(tsParticles);
@@ -22,10 +32,10 @@ export class ParticleService {
 
   reloadParticles(light: boolean){
     if(light){
-      this.particleConfigs = [config2Light, config1Light];
+      this.particleConfigs = [config1Light, config2Light];
     }
     else{
-      this.particleConfigs = [config1Dark, config2Dark];
+      this.particleConfigs = [config2Dark, config1Dark];
     }
     this.loadParticles();
   }

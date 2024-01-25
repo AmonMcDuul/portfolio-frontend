@@ -20,15 +20,24 @@ import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 export class HomeComponent implements OnInit {
   selectedItem: string | null = null;
   themes: any;
-  themeBool: boolean = true;
+  themeBool: boolean = false;
   faGear = faGear;
   faCircleHalfStroke = faCircleHalfStroke;
   
   constructor(private particleService: ParticleService, protected themeService: ThemeService) {}
   
   ngOnInit(): void {
-    this.themeService.set('light');
+    const storedThemeBool = localStorage.getItem('themeBool');
+    this.themeBool = storedThemeBool ? JSON.parse(storedThemeBool) : false;
+    if(this.themeBool){
+      this.themeService.set('light');
+    }
+    else{
+      this.themeService.set('dark');
+    }
+      
     this.selectedItem = "home";
+    this.particleService.setInitConfig();
     this.particleService.loadParticles();
   }
   selectItem(item: string): void {
@@ -41,6 +50,7 @@ export class HomeComponent implements OnInit {
 
   setThemeReloadParticles(){
     this.themeBool = !this.themeBool;
+    localStorage.setItem('themeBool', JSON.stringify(this.themeBool));
     this.themeService.change();
     this.particleService.reloadParticles(this.themeBool);
   }
