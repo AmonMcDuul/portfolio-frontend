@@ -5,15 +5,15 @@
             <small class="tag">{{ project.tags }}</small>
             <p>{{ project.description }}</p>
             <p>
-                <a *ngIf="project.url !== undefined" [href]="project.url" target="_blank">View:<fa-icon
+                <a *ngIf="project.url !== undefined" [href]="project.url" target="_blank">Source code: <fa-icon
                         [icon]="faGithub"></fa-icon></a>
             </p>
             <p>
-                <a *ngIf="project.url2git !== undefined" [href]="project.url2git" target="_blank">View:<fa-icon
-                        [icon]="faGithub"></fa-icon></a>
+                <a *ngIf="project.url2git !== undefined" [href]="project.url2git" target="_blank">Source code #2:
+                    <fa-icon [icon]="faGithub"></fa-icon></a>
             </p>
             <p>
-                <a *ngIf="project.url2 !== undefined" [href]="project.url2" target="_blank">View:<fa-icon
+                <a *ngIf="project.url2 !== undefined" [href]="project.url2" target="_blank">View: <fa-icon
                         [icon]="faGlobe"></fa-icon></a>
             </p>
             <hr>

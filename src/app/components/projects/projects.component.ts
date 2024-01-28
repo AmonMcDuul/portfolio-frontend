@@ -22,8 +22,8 @@ export class ProjectsComponent implements OnInit {
       id: "1",
       img: 'https://via.placeholder.com/150',
       title: 'Inventory management system',
-      tags: 'C#, .Net Core, Blazor.',
-      description: 'CRUD application to manage an inventory.',
+      tags: 'C#, .Net Core, Blazor',
+      description: 'A comprehensive web application built using C#, .NET Core, and Blazor for efficient inventory management.',
       url: 'https://github.com/AmonMcDuul/InventoryManagementSolution',
     },
     {
@@ -31,7 +31,7 @@ export class ProjectsComponent implements OnInit {
       img: 'https://via.placeholder.com/150',
       title: 'SignalR stress tester',
       tags: 'Python',
-      description: 'Program for stress/performance testing a signalR hub using multithreading.',
+      description: 'A Python program designed for stress and performance testing of SignalR hubs using multithreading.',
       url: 'https://github.com/AmonMcDuul/SignalRStressTest'
     },
     {
@@ -39,15 +39,15 @@ export class ProjectsComponent implements OnInit {
       img: 'https://via.placeholder.com/150',
       title: 'Email scheduler',
       tags: 'Rust',
-      description: 'Backend for scheduling an email. Send a message to an emailaddress at any given date/time.',
+      description: 'Backend made with rust. A system for scheduling emails, allowing messages to be sent at specified dates and times.',
       url: 'https://github.com/AmonMcDuul/email-scheduler'
     },
     {
       id: "4",
       img: 'https://via.placeholder.com/150',
       title: 'Instant bingo',
-      tags: 'HTML5 game.',
-      description: 'Generate bingo cards, the game plays itself til there is a winning card.',
+      tags: 'HTML5 game',
+      description: 'An HTML5 game for generating an x number of bingo cards, then playing them automaticly until a winning card is achieved.',
       url: 'https://github.com/AmonMcDuul/InstantBingo',
       url2: 'https://amonmcduul.github.io/InstantBingo/'
     },
@@ -55,17 +55,17 @@ export class ProjectsComponent implements OnInit {
       id: "5",
       img: 'https://via.placeholder.com/150',
       title: 'SenWGames',
-      tags: 'C#, .Net Core, Angular.',
-      description: 'CRUD, Websocket, SignalR, NGRX Store. Onion layered. Playable multiplayer useless box game.',
+      tags: 'C#, .Net Core, Angular',
+      description: 'Webapplication to play multiplayer games. Incorporates CRUD operations, SignalR, and NGRX. Create and joing groups, search groups location based.',
       url: 'https://github.com/AmonMcDuul/SenWGames',
       url2git: 'https://github.com/Subtracting/SenWFront'
     },
     {
       id: "6",
       img: 'https://via.placeholder.com/150',
-      title: 'Portfolio Django',
+      title: 'Project management network',
       tags: 'Python, Django',
-      description: 'Website made with Django. Contains login, manage personal projects, make a blog and messaging functionalities.',
+      description: 'Used as a portfolio website, create and manage projects and showcase them. Includes functionalities such as login, blogging, and messaging.',
       url: 'https://github.com/AmonMcDuul/PortfolioSiteDjango'
     },
     {
@@ -73,7 +73,7 @@ export class ProjectsComponent implements OnInit {
       img: 'https://via.placeholder.com/150',
       title: 'Socket and Client',
       tags: 'Rust, Java',
-      description: 'Implemented an custom made transfer protocol. Transfer files to the server.',
+      description: 'Implemented a custom transfer protocol using Rust and Java for efficient file transfer between server and client.',
       url: 'https://github.com/AmonMcDuul/SocketClient'
     },
     {
@@ -81,15 +81,15 @@ export class ProjectsComponent implements OnInit {
       img: 'https://via.placeholder.com/150',
       title: 'Note app',
       tags: 'React',
-      description: 'Simple note app. Create, read, update and delete notes.',
+      description: 'Made with React, a simple note-taking application that allows users to create, read, update, and delete notes.',
       url: 'https://github.com/AmonMcDuul/notes_app_react'
     },
     {
       id: "9",
       img: 'https://via.placeholder.com/150',
       title: 'Notification (re)scheduler',
-      tags: 'Python, sql',
-      description: 'Query a database and email the results to recipient at a specified interval.',
+      tags: 'Python',
+      description: 'Developed in Python, this desktop application queries a database and sends email notifications at specified intervals.',
       url: 'https://github.com/AmonMcDuul/NotificatieApplicatie'
     },
     {
@@ -97,16 +97,8 @@ export class ProjectsComponent implements OnInit {
       img: 'https://via.placeholder.com/150',
       title: 'Portfolio',
       tags: 'Angular',
-      description: 'This portfolio website.',
+      description: 'The website you are currently viewing, built using Angular.',
       url: 'https://github.com/AmonMcDuul/portfolio-frontend'
-    },
-    {
-      id: "11",
-      img: 'https://via.placeholder.com/150',
-      title: 'Professionaly',
-      tags: 'C#, .Net, Angular, Python, Sql, Docker, Metabase, Azure',
-      description: 'I Work at Xfakt. We design and develop custom digital products. Our expertise guarantees robust, user-friendly and safe solutions.',
-      url: 'https://xfakt.nl'
     },
   ];
   
