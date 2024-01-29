@@ -45,8 +45,6 @@ export class HomeComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
-    console.log("resizio");
-    console.log(this.smallScreen);
     this.checkWindowSize();
   }
 
