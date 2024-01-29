@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ParticleService } from '../../services/particle.service';
 import { CommonModule } from '@angular/common';
 import { ContactComponent } from '../../components/contact/contact.component';
@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
   selectedItem: string | null = null;
   themes: any;
   themeBool: boolean = false;
+  smallScreen: boolean = false;
   faGear = faGear;
   faCircleHalfStroke = faCircleHalfStroke;
   
@@ -35,13 +36,18 @@ export class HomeComponent implements OnInit {
     else{
       this.themeService.set('dark');
     }
-      
+    this.checkWindowSize();  
     this.selectedItem = "home";
-    this.particleService.setInitConfig();
-    this.particleService.loadParticles();
   }
   selectItem(item: string): void {
       this.selectedItem = item;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    console.log("resizio");
+    console.log(this.smallScreen);
+    this.checkWindowSize();
   }
 
   changeConfig(){
@@ -52,6 +58,16 @@ export class HomeComponent implements OnInit {
     this.themeBool = !this.themeBool;
     localStorage.setItem('themeBool', JSON.stringify(this.themeBool));
     this.themeService.change();
-    this.particleService.reloadParticles(this.themeBool);
+    this.particleService.reloadParticles(this.themeBool, this.smallScreen);
+  }
+
+  checkWindowSize(): void {
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 768) {
+      this.smallScreen = true;
+    } else {
+      this.smallScreen = false;
+    }
+    this.particleService.reloadParticles(this.themeBool, this.smallScreen);
   }
 }
