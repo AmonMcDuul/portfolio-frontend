@@ -26,17 +26,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-##
+## Deploying github pages
+Add package:
+  ng add angular-cli-ghpages
 
-delete branch
-git branch -D gh-pages
+if necessary delete gh-pages branch:
+  git branch -D gh-pages
+  git push origin --delete gh-pages
 
-git push origin --delete gh-pages
-
-ng add angular-cli-ghpages
-
-npm run build -- --configuration production --base-href "https://amonmcduul.github.io/portfolio-frontend/"
-
--- change to: build: builder: "outputPath": "docs"
-
-npx angular-cli-ghpages --dir=docs/browser
+To deploy:
+In angular.json change outputPath to docs:
+  npm run build -- --configuration production --base-href "https://amonmcduul.github.io/portfolio-frontend/"
+  npx angular-cli-ghpages --dir=docs/browser
