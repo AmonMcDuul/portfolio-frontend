@@ -30,21 +30,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Add package:
 
-  ng add angular-cli-ghpages
-  
+ng add angular-cli-ghpages
 
 if necessary delete gh-pages branch:
 
-  git branch -D gh-pages
-  
-  git push origin --delete gh-pages
-  
+git branch -D gh-pages
+
+git push origin --delete gh-pages
 
 To deploy:
 
 In angular.json change outputPath to docs:
 
-  npm run build -- --configuration production --base-href "https://amonmcduul.github.io/portfolio-frontend/"
-  
-  npx angular-cli-ghpages --dir=docs/browser
-  
+npm run build -- --configuration production --base-href "https://amonmcduul.github.io/portfolio-frontend/"
