@@ -1,3 +1,5 @@
+@import './../../../assets/styles/keyframes.scss';
+
 .container {
   position: relative;
   height: 500px;
@@ -23,30 +25,3 @@ a{
     font-weight: bold;
     font-size: 16px;
 }
-
-  @keyframes glitchText {
-    2%, 64% {
-      transform: translate(2px, 0);
-    }
-    4%, 60% {
-      transform: translate(-2px, 0);
-    }
-    62% {
-      transform: translate(0, 0);
-    }
-    63% {
-      transform: translate(0, 2px);
-    }
-    65% {
-      transform: translate(0, -2px);
-    }
-    94% {
-      transform: translate(0, 0);
-    }
-    96%, 98% {
-      transform: translate(2px, 0);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }

@@ -28,8 +28,10 @@ export class HomeComponent implements OnInit {
   constructor(private particleService: ParticleService, protected themeService: ThemeService) {}
   
   ngOnInit(): void {
-    const storedThemeBool = localStorage.getItem('themeBool');
-    this.themeBool = storedThemeBool ? JSON.parse(storedThemeBool) : false;
+    if (typeof window !== 'undefined') {
+      const storedThemeBool = localStorage.getItem('themeBool');
+      this.themeBool = storedThemeBool ? JSON.parse(storedThemeBool) : false;
+    }
     if(this.themeBool){
       this.themeService.set('light');
     }

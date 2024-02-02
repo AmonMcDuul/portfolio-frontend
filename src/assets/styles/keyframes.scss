@@ -60,3 +60,9 @@
       transform: translate(0, 0);
     }
   }
+
+  @keyframes bordercolor {
+    50% {
+      border-color: var(--contact-border-alt);
+    }
+  }

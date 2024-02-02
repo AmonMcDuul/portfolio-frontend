@@ -1,3 +1,5 @@
+@import './../../../assets/styles/keyframes.scss';
+
 .contact-form-container {
     margin: 0 auto;
   
@@ -50,11 +52,5 @@
           opacity: 0.9;
         }
       }
-    }
-  }
-  
-  @keyframes bordercolor {
-    50% {
-      border-color: var(--contact-border-alt);
     }
   }
