@@ -43,3 +43,5 @@ To deploy:
 In angular.json change outputPath to docs:
 
 npm run build -- --configuration production --base-href "https://amonmcduul.github.io/portfolio-frontend/"
+
+npx angular-cli-ghpages --dir=docs/browser
