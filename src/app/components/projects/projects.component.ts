@@ -56,7 +56,7 @@ export class ProjectsComponent implements OnInit {
       img: 'https://via.placeholder.com/150',
       title: 'SenWGames',
       tags: 'C#, .Net Core, Angular',
-      description: 'Webapplication to play multiplayer games. Incorporates CRUD operations, SignalR, and NGRX. Create and joing groups, search groups location based.',
+      description: 'A webapp to play multiplayer games. Incorporates CRUD, SignalR, and NGRX. Create and joing groups, search groups location based.',
       url: 'https://github.com/AmonMcDuul/SenWGames',
       url2git: 'https://github.com/Subtracting/SenWFront'
     },
@@ -71,7 +71,7 @@ export class ProjectsComponent implements OnInit {
     {
       id: "7",
       img: 'https://via.placeholder.com/150',
-      title: 'Socket and Client',
+      title: 'File transfer app',
       tags: 'Rust, Java',
       description: 'Implemented a custom transfer protocol using Rust and Java for efficient file transfer between server and client.',
       url: 'https://github.com/AmonMcDuul/SocketClient'
@@ -99,6 +99,23 @@ export class ProjectsComponent implements OnInit {
       tags: 'Angular',
       description: 'The website you are currently viewing, built using Angular.',
       url: 'https://github.com/AmonMcDuul/portfolio-frontend'
+    },
+    {
+      id: "11",
+      img: 'https://via.placeholder.com/150',
+      title: 'Space trader',
+      tags: 'Angular, Game',
+      description: 'A trading game where you have to go to different places in the solar system and trade your way to the top.',
+      url: 'https://github.com/AmonMcDuul/space-trader',
+      url2: 'https://amonmcduul.github.io/space-trader/'
+    },
+    {
+      id: "12",
+      img: 'https://via.placeholder.com/150',
+      title: 'Style manager CE',
+      tags: 'Chrome extension',
+      description: 'Chrome extension to view all styles on a webpage and see the boxes of all css elements',
+      url: 'https://github.com/AmonMcDuul/style-manager-ce',
     },
   ];
   
