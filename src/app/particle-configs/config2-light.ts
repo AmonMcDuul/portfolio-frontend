@@ -2,7 +2,7 @@ const config2Light = {
     fullScreen: { enable: false },
     particles: {
       number: {
-        value: 75
+        value: 60
       },
       color: {
         value: "#ffffff"
