@@ -22,7 +22,6 @@ export class ContactComponent {
 
   onSubmit(): void {
     if (this.honeypot) {
-      console.log('Honeypot field filled, discarding submission.');
       return;
     }
 
