@@ -15,11 +15,17 @@ export class ContactComponent {
   name: string = '';
   email: string = '';
   message: string = '';
+  honeypot: string = '';
   isFormSubmitted: boolean = false;
 
   constructor(private emailService: EmailService) {}
 
   onSubmit(): void {
+    if (this.honeypot) {
+      console.log('Honeypot field filled, discarding submission.');
+      return;
+    }
+
     const subject = `Contact Form Submission from ${this.name}`;
     const body = `Name: ${this.name}\nEmail: ${this.email}\n\nMessage:\n${this.message}`;
 
@@ -39,5 +45,6 @@ export class ContactComponent {
     this.name = '';
     this.email = '';
     this.message = '';
+    this.honeypot = '';
   }
 }

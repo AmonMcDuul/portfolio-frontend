@@ -8,6 +8,7 @@
         <input type="text" id="email" name="email" [(ngModel)]="email" required>
         <label for="message">Message</label>
         <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+        <input type="text" id="honeypot" name="honeypot" [(ngModel)]="honeypot" class="honeypot">
         <button type="submit" [disabled]="!contactForm.form.valid">Send</button>
     </form>
     <div *ngIf="isFormSubmitted" class="confirmation-message">
