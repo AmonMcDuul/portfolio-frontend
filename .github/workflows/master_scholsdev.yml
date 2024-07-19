@@ -27,9 +27,10 @@ jobs:
           npm run build --if-present
 
       - name: Clean up unnecessary files
+        shell: pwsh
         run: |
-          npx rimraf node_modules
-          npx rimraf *.log
+          Remove-Item -Recurse -Force node_modules
+          Remove-Item -Recurse -Force *.log
 
       - name: Compress files for deployment
         run: |
