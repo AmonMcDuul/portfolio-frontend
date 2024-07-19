@@ -99,6 +99,9 @@
   box-shadow: 
   0 0 20px 20px var(--background-color),
   inset 0 0 20px 20px transparent;
+  overflow: auto; 
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .projects-container {
