@@ -28,8 +28,8 @@ jobs:
 
       - name: Clean up unnecessary files
         run: |
-          rd /s /q node_modules
-          del /s /q *.log
+          npx rimraf node_modules
+          npx rimraf *.log
 
       - name: Compress files for deployment
         run: |
