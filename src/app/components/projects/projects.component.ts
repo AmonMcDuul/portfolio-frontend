@@ -117,6 +117,15 @@ export class ProjectsComponent implements OnInit {
       description: 'Chrome extension to view all styles on a webpage and see the boxes of all css elements',
       url: 'https://github.com/AmonMcDuul/style-manager-ce',
     },
+    {
+      id: "13",
+      img: 'https://via.placeholder.com/150',
+      title: 'Routes!$#',
+      tags: 'Leaflet, OSRM, Angular, maps & routes',
+      description: 'Routes!$# is a web application designed to plan, create, save, and manage walking and running routes.',
+      url: 'https://github.com/AmonMcDuul/run-planner',
+      url2: 'https://amonmcduul.github.io/run-planner'
+    },
   ];
   
   ngOnInit() {
