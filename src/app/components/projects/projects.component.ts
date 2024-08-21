@@ -120,9 +120,9 @@ export class ProjectsComponent implements OnInit {
     {
       id: "13",
       img: 'https://via.placeholder.com/150',
-      title: 'Routes!$#',
+      title: 'Routes!#^',
       tags: 'Leaflet, OSRM, Angular, maps & routes',
-      description: 'Routes!$# is a web application designed to plan, create, save, and manage walking and running routes.',
+      description: 'Routes!#^ is a web application designed to plan, create, save, and manage walking and running routes.',
       url: 'https://github.com/AmonMcDuul/run-planner',
       url2: 'https://amonmcduul.github.io/run-planner'
     },
