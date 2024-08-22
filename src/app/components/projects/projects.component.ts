@@ -126,6 +126,15 @@ export class ProjectsComponent implements OnInit {
       url: 'https://github.com/AmonMcDuul/run-planner',
       url2: 'https://amonmcduul.github.io/run-planner'
     },
+    {
+      id: "14",
+      img: 'https://via.placeholder.com/150',
+      title: 'Cellular automata',
+      tags: 'Angular, Visualization, Simulation',
+      description: 'A web application to visualize different kinds of cellular automata. allows you to interact with various rules and patterns, such as Conway\'s Game of Life, Brian\'s Brain, and Wireworld',
+      url: 'https://github.com/AmonMcDuul/cellular-automata',
+      url2: 'https://amonmcduul.github.io/cellular-automata'
+    },
   ];
   
   ngOnInit() {
