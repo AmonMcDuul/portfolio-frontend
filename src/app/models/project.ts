@@ -7,4 +7,5 @@ export interface Project {
     url?: string;
     url2?: string;
     url2git? : string;
+    url3git?: string;
   }

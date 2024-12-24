@@ -150,7 +150,8 @@ export class ProjectsComponent implements OnInit {
       title: 'EMDR-tool',
       tags: 'Angular, signalR, dotnet',
       description: 'A specialized tool designed to support Eye Movement Desensitization and Reprocessing (EMDR) therapy. It facilitates real-time interaction using SignalR, allowing therapists to guide clients through therapy sessions with customizable settings and visual aids.',
-      url: 'https://github.com/AmonMcDuul/emdr-admin, https://github.com/AmonMcDuul/emdr-client',
+      url: 'https://github.com/AmonMcDuul/emdr-admin',
+      url3git: 'https://github.com/AmonMcDuul/emdr-client',
       url2git: 'https://github.com/AmonMcDuul/emdr-backend'
     },
     {

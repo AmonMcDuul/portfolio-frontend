@@ -13,6 +13,10 @@
                     <fa-icon [icon]="faGithub"></fa-icon></a>
             </p>
             <p>
+                <a *ngIf="project.url3git !== undefined" [href]="project.url3git" target="_blank">Source code #3:
+                    <fa-icon [icon]="faGithub"></fa-icon></a>
+            </p>
+            <p>
                 <a *ngIf="project.url2 !== undefined" [href]="project.url2" target="_blank">View: <fa-icon
                         [icon]="faGlobe"></fa-icon></a>
             </p>
