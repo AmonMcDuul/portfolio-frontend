@@ -141,6 +141,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Sketch studio 2d',
       tags: 'Angular, Visualization, drawing tool',
       description: 'A dynamic drawing tool for creating 2D plans, tailored specifically for bathroom layouts. It features functionalities like saving and loading layouts, exporting designs to PDF, and user-friendly visualization for precise planning and customization.',
+      url: 'https://github.com/AmonMcDuul/roomArchitect',
       url2: 'https://sketchstudio2d.azurewebsites.net/'
     },
     {
