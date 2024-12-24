@@ -56,7 +56,7 @@ export class ProjectsComponent implements OnInit {
       img: 'https://via.placeholder.com/150',
       title: 'SenWGames',
       tags: 'C#, .Net Core, Angular',
-      description: 'A webapp to play multiplayer games. Incorporates CRUD, SignalR, and NGRX. Create and joing groups, search groups location based.',
+      description: 'A webapp to play multiplayer games. Incorporates CRUD, SignalR, and NGRX. Create and join groups, search groups location based.',
       url: 'https://github.com/AmonMcDuul/SenWGames',
       url2git: 'https://github.com/Subtracting/SenWFront'
     },
@@ -134,6 +134,32 @@ export class ProjectsComponent implements OnInit {
       description: 'A web application to visualize different kinds of cellular automata. allows you to interact with various rules and patterns, such as Conway\'s Game of Life, Brian\'s Brain, and Wireworld',
       url: 'https://github.com/AmonMcDuul/cellular-automata',
       url2: 'https://amonmcduul.github.io/cellular-automata'
+    },
+    {
+      id: "15",
+      img: 'https://via.placeholder.com/150',
+      title: 'Sketch studio 2d',
+      tags: 'Angular, Visualization, drawing tool',
+      description: 'A dynamic drawing tool for creating 2D plans, tailored specifically for bathroom layouts. It features functionalities like saving and loading layouts, exporting designs to PDF, and user-friendly visualization for precise planning and customization.',
+      url2: 'https://sketchstudio2d.azurewebsites.net/'
+    },
+    {
+      id: "16",
+      img: 'https://via.placeholder.com/150',
+      title: 'EMDR-tool',
+      tags: 'Angular, signalR, dotnet',
+      description: 'A specialized tool designed to support Eye Movement Desensitization and Reprocessing (EMDR) therapy. It facilitates real-time interaction using SignalR, allowing therapists to guide clients through therapy sessions with customizable settings and visual aids.',
+      url: 'https://github.com/AmonMcDuul/emdr-admin, https://github.com/AmonMcDuul/emdr-client',
+      url2git: 'https://github.com/AmonMcDuul/emdr-backend'
+    },
+    {
+      id: "17",
+      img: 'https://via.placeholder.com/150',
+      title: 'Business website',
+      tags: 'Angular',
+      description: 'Website tailored for businesses',
+      url: 'https://github.com/AmonMcDuul/emdr-admin',
+      url2: 'https://github.com/AmonMcDuul/flamsoft-frontend'
     },
   ];
   
