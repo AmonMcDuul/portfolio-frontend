@@ -96,7 +96,7 @@ export class ProjectsComponent implements OnInit {
       id: "10",
       img: 'https://via.placeholder.com/150',
       title: 'Portfolio',
-      tags: 'Angular',
+      tags: 'Angular, azure',
       description: 'The website you are currently viewing, built using Angular.',
       url: 'https://github.com/AmonMcDuul/portfolio-frontend'
     },
@@ -139,7 +139,7 @@ export class ProjectsComponent implements OnInit {
       id: "15",
       img: 'https://via.placeholder.com/150',
       title: 'Sketch studio 2d',
-      tags: 'Angular, Visualization, drawing tool',
+      tags: 'Angular, Visualization, drawing tool, azure',
       description: 'A dynamic drawing tool for creating 2D plans, tailored specifically for bathroom layouts. It features functionalities like saving and loading layouts, exporting designs to PDF, and user-friendly visualization for precise planning and customization.',
       url: 'https://github.com/AmonMcDuul/roomArchitect',
       url2: 'https://sketchstudio2d.azurewebsites.net/'
@@ -158,10 +158,10 @@ export class ProjectsComponent implements OnInit {
       id: "17",
       img: 'https://via.placeholder.com/150',
       title: 'Business website',
-      tags: 'Angular',
+      tags: 'Angular, azure',
       description: 'Website tailored for businesses',
-      url: 'https://github.com/AmonMcDuul/emdr-admin',
-      url2: 'https://github.com/AmonMcDuul/flamsoft-frontend'
+      url: 'https://github.com/AmonMcDuul/flamsoft-frontend',
+      url2: 'https://flamsoft.azurewebsites.net/'
     },
   ];
   
